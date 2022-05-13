@@ -1,0 +1,121 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": ["react-hooks", "prettier"],
+  "extends": ["eslint:recommended", "prettier"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "globals": {
+    "navigator": "readonly",
+    "fetch": "readonly",
+    "__DEV__": "readonly",
+    "test": "readonly",
+    "expect": "readonly",
+    "window": "readonly",
+    "describe": "readonly",
+    "it": "readonly",
+    "jest": "readonly",
+    "Headers": "readonly",
+    "RequestInfo": "readonly",
+    "RequestInit": "readonly",
+    "JSX": "readonly"
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "tabs": false,
+        "tabWidth": 2,
+        "bracketSpacing": true,
+        "printWidth": 80,
+        "singleQuote": true,
+        "trailingComma": "all"
+      }
+    ],
+    "react/prop-types": 0,
+    "react/display-name": 0,
+    "@typescript-eslint/consistent-type-assertions": "off",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/member-delimiter-style": [
+      "off",
+      "error",
+      {
+        "multiline": {
+          "delimiter": "none",
+          "requireLast": true
+        },
+        "singleline": {
+          "delimiter": "semi",
+          "requireLast": false
+        }
+      }
+    ],
+    "@typescript-eslint/member-ordering": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/semi": ["off", null],
+    "arrow-parens": ["off", "as-needed"],
+    "camelcase": "off",
+    "curly": "off",
+    "guard-for-in": "off",
+    "id-match": "error",
+    "import/no-internal-modules": "off",
+    "import/order": "off",
+    "max-classes-per-file": "off",
+    "max-len": "off",
+    "no-console": [
+      "off",
+      {
+        "allow": [
+          "warn",
+          "dir",
+          "time",
+          "timeEnd",
+          "timeLog",
+          "trace",
+          "assert",
+          "clear",
+          "count",
+          "countReset",
+          "group",
+          "groupEnd",
+          "table",
+          "debug",
+          "info",
+          "dirxml",
+          "groupCollapsed",
+          "Console",
+          "profile",
+          "profileEnd",
+          "timeStamp",
+          "context"
+        ]
+      }
+    ],
+    "no-unused-vars": "off",
+    "no-extra-boolean-cast": "off",
+    "no-empty": "error",
+    "no-inner-declarations": "off",
+    "object-shorthand": "off",
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": true
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  }
+}
