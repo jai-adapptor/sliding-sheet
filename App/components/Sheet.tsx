@@ -26,7 +26,7 @@ const screen = Dimensions.get('screen');
 
 const NAV_HEIGHT = 48;
 
-const DraggableSheet: React.FC<SheetProps> = (props) => {
+const Sheet: React.FC<SheetProps> = (props) => {
   const [dimensions, setDimensions] = useState({ window, screen });
 
   useEffect(() => {
@@ -213,4 +213,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DraggableSheet;
+export default Sheet;
