@@ -2,7 +2,7 @@ import React from 'react';
 import { AppRegistry, Platform, View } from 'react-native';
 
 import { name as appName } from '../app.json';
-import DraggableSheet from './components/DraggableSheet';
+import Sheet from './components/Sheet';
 import MainContent from './components/MainContent';
 import ExampleComponent from './components/ExampleComponent';
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <View style={{ flex: 1 }}>
       <MainContent />
-      <DraggableSheet>
+      <Sheet>
         <ExampleComponent style={{ height: 60, marginBottom: 10 }} />
         <View style={{ flexDirection: 'row', marginBottom: 10 }}>
           <ExampleComponent style={{ flex: 1, height: 120, marginRight: 10 }} />
@@ -39,7 +39,7 @@ function App() {
           <ExampleComponent style={{ flex: 1, height: 120, marginRight: 10 }} />
           <ExampleComponent style={{ flex: 1, height: 120 }} />
         </View>
-      </DraggableSheet>
+      </Sheet>
     </View>
   );
 }
